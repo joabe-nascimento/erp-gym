@@ -3,9 +3,9 @@ import Sidebar from "../sidebar/page";
 export default function Home() {
   return (
     <Sidebar>
-      <div className="flex flex-col bg-gray-100 mx-2 md:mx-8 lg:mx-12  ">
-        <header className="mb-8  ">
-          <h1 className="text-3xl  font-bold text-gray-800">
+      <div className="flex flex-col bg-gray-100 mx-2 md:mx-8 lg:mx-12">
+        <header className="mb-8">
+          <h1 className="text-3xl font-bold text-gray-800">
             Dashboard da Academia
           </h1>
           <p className="text-gray-600">
@@ -13,31 +13,29 @@ export default function Home() {
           </p>
         </header>
 
-        {/* Resumo de métricas */}
+        {/* Resumo de métricas com gradiente */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-          <div className="bg-white shadow-lg rounded-lg p-6 text-center">
-            <h2 className="text-xl font-semibold text-gray-800">
+          <div className="bg-gradient-to-r from-blue-400 to-blue-600 shadow-lg rounded-lg p-6 text-center">
+            <h2 className="text-xl font-semibold text-white">
               Total de Membros
             </h2>
-            <p className="text-3xl font-bold text-blue-500">150</p>
+            <p className="text-3xl font-bold text-white">150</p>
           </div>
-          <div className="bg-white shadow-lg rounded-lg p-6 text-center">
-            <h2 className="text-xl font-semibold text-gray-800">
+          <div className="bg-gradient-to-r from-green-400 to-green-600 shadow-lg rounded-lg p-6 text-center">
+            <h2 className="text-xl font-semibold text-white">
               Receitas do Mês
             </h2>
-            <p className="text-3xl font-bold text-green-500">R$ 25.000</p>
+            <p className="text-3xl font-bold text-white">R$ 25.000</p>
           </div>
-          <div className="bg-white shadow-lg rounded-lg p-6 text-center">
-            <h2 className="text-xl font-semibold text-gray-800">
+          <div className="bg-gradient-to-r from-orange-400 to-orange-600 shadow-lg rounded-lg p-6 text-center">
+            <h2 className="text-xl font-semibold text-white">
               Aulas Agendadas
             </h2>
-            <p className="text-3xl font-bold text-orange-500">42</p>
+            <p className="text-3xl font-bold text-white">42</p>
           </div>
-          <div className="bg-white shadow-lg rounded-lg p-6 text-center">
-            <h2 className="text-xl font-semibold text-gray-800">
-              Planos Ativos
-            </h2>
-            <p className="text-3xl font-bold text-purple-500">98</p>
+          <div className="bg-gradient-to-r from-purple-400 to-purple-600 shadow-lg rounded-lg p-6 text-center">
+            <h2 className="text-xl font-semibold text-white">Planos Ativos</h2>
+            <p className="text-3xl font-bold text-white">98</p>
           </div>
         </div>
 

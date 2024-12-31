@@ -38,6 +38,11 @@ const Sidebar = ({ children }: { children?: ReactNode }) => {
     setIsSidebarOpen(!isSidebarOpen); // Alterna o estado da sidebar
   };
 
+  const handleLogout = () => {
+    // Aqui você pode adicionar lógica de logout, como limpar tokens, etc.
+    router.push("/login"); // Redireciona para a tela de login
+  };
+
   return (
     <div className="flex h-screen">
       {/* Sidebar */}
@@ -69,7 +74,7 @@ const Sidebar = ({ children }: { children?: ReactNode }) => {
 
         <div className="p-4 border-t border-gray-700">
           <button
-            onClick={() => alert("Você saiu!")}
+            onClick={handleLogout} // Redireciona para a tela de login
             className="w-full p-2 bg-red-500 hover:bg-red-600 text-white rounded transition duration-200 ease-in-out flex items-center space-x-2"
           >
             <FaSignOutAlt /> {/* Ícone de sair */}
